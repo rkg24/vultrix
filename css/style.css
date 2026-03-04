@@ -219,7 +219,7 @@ body, p, .btn {
 }
 
 .btn-custom-navy:hover {
-    background-color: #014D4E;
+    background-color: #004c4c;
     box-shadow: 0 0 15px rgba(217, 164, 38, 0.4);
     transform: translateY(-2px);
 }
