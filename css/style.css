@@ -1,0 +1,225 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Container Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f8fafc; /* Light grey background */
+    font-family: sans-serif;
+    border: 1px solid #e2e8f0;
+}
+
+.services-grid1 {
+    display: grid;
+    /* This creates 3 equal columns on desktop */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust spacing between cards */
+    padding: 30px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Responsive adjustment for tablets and phones */
+@media (max-width: 992px) {
+    .services-grid1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid1 {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+/* Individual Card Styling */
+
+.card1 {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+/*.card1:hover {
+        transform: translateY(-5px);
+    }*/
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+/* Icon Container */
+.icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* 1. Add a transition to the card so the glow fades in smoothly */
+.card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px; /* Optional: keeps the glow shaped to the card */
+}
+
+/* 2. Define the hover state with a pink box-shadow */
+.card:hover {
+    transform: translateY(-5px); /* Optional: lifts the card slightly */
+    box-shadow: 0 0 20px 5px rgba(255, 20, 147, 0.6); 
+    /* syntax: horizontal vertical blur spread color */
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+.container1 {
+    position: relative; /* This is the anchor */
+    width: 0px;
+    height: 0px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.absolute-image {
+    position: absolute; /* This pulls it out of the normal document flow */
+    top: -600px; /* Distance from the top of the container */
+    left: 740px; /* Distance from the left of the container */
+    width: 750px; /* Optional: set size */
+}
+
+/* This hides the image when the screen is 600px wide or smaller */
+/*
+@media (max-width: 1500px) {
+    .absolute-image {
+        display: none;
+    }
+}*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+/*Carousel - prevent the "movement" or layout shifting of your carousel while it transitions*/
+
+#mainCarousel .carousel-inner {
+    min-height: 500px; /* Adjust this value based on your longest slide */
+    display: flex;
+    align-items: center; /* This keeps shorter text centered vertically */
+}
+
+#mainCarousel .carousel-item {
+    height: 400px; /* Adjust to fit your content */
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+.neon-border-wire {
+  border-radius: 30px;
+  
+  /* 1. Define the solid wire border (bright, light blue) */
+  border: 4px solid #b3f0ff; 
+
+  /* 2. Add the glowing halo around that wire */
+  box-shadow: 
+    0 0 10px #00ccff,   /* Inner soft glow */
+    0 0 20px #00ccff,   /* Medium soft glow */
+    0 0 30px #00aaff;   /* Outer, softer spread */
+}
+
+.neon-border-wire2 {
+  border-radius: 30px;
+  
+  /* 1. Define the solid wire border (bright, light blue) */
+  border: 4px solid #b3f0ff; 
+
+  /* 2. Add the glowing halo around that wire */
+  box-shadow: 
+    0 0 10px #D9A426,   /* Inner soft glow */
+    0 0 10px #D9A426,   /* Medium soft glow */
+    0 0 10px #D9A426;   /* Outer, softer spread */
+}
+
+.neon-border-wire3 {
+  border-radius: 30px;
+  
+  /* 1. Define the solid wire border (bright, light blue) */
+  border: 4px solid #b3f0ff; 
+
+  /* 2. Add the glowing halo around that wire */
+  box-shadow: 
+    0 0 10px #00ccff,   /* Inner soft glow */
+    0 0 10px #00ccff,   /* Medium soft glow */
+    0 0 10px #00ccff;   /* Outer, softer spread */
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Global brand typography */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
+
+body, p, .btn {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Enhancing the Button to match the tech aesthetic */
+.btn-custom-gold {
+    background-color: #D9A426;
+    color: black;
+    border: none;
+    border-radius: 4px; /* Slightly sharper corners for a pro look */
+    transition: all 0.3s ease;
+}
+
+.btn-custom-navy {
+    background-color: #1B2631;
+    color: gray;
+    border: none;
+    border-radius: 4px; /* Slightly sharper corners for a pro look */
+    transition: all 0.3s ease;
+}
+
+.btn-custom-gold:hover {
+    background-color: #ffc107;
+    box-shadow: 0 0 15px rgba(217, 164, 38, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-custom-navy:hover {
+    background-color: #014D4E;
+    box-shadow: 0 0 15px rgba(217, 164, 38, 0.4);
+    transform: translateY(-2px);
+}
