@@ -51,6 +51,40 @@ body {
     }
 }
 
+video {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Soft neon glow */
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+/* By default, hide the mobile logo */
+.mobile-only-content {
+    display: none;
+}
+
+/* When the screen is 768px or smaller */
+@media (max-width: 768px) {
+    /* Hide the heavy interactive script */
+    .desktop-only-content {
+        display: none !important;
+    }
+
+    /* Show the logo */
+    .mobile-only-content {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Ensure the logo fits the mobile screen */
+    .mobile-only-content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 /*--------------------------------------------------------------------------------------------*/
 
 
@@ -91,6 +125,22 @@ body {
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
+}
+
+/* -------------------------------------------------------------------------------------*/
+
+.card1 {
+    overflow: hidden; /* Keeps the video corners from popping out of rounded edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the secret sauce: it fills the card without stretching */
+    display: block;
 }
 
 /*.card1:hover {
