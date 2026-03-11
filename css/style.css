@@ -87,6 +87,40 @@ video {
 
 /*--------------------------------------------------------------------------------------------*/
 
+.bento-card {
+  position: relative;
+  background: #161b22; /* Dark card background */
+  border-radius: 16px;
+  padding: 2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bento-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px; 
+  padding: 2px; /* This defines the border thickness */
+  
+  /* The Gradient */
+  background: linear-gradient(135deg, #00d4ff, #bd00ff);
+  
+  /* The Magic: Masks the center so only the padding area (the border) shows */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
+}
+
+
+
 
 /* Individual Card Styling */
 
@@ -114,7 +148,7 @@ video {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    border-radius: 20%; /* Optional: makes the icon box circular */
+    border-radius: 12%; /* Optional: makes the icon box circular */
 }
 
 .card3 {
@@ -175,7 +209,7 @@ video {
 /* 1. Add a transition to the card so the glow fades in smoothly */
 .card {
     transition: all 0.3s ease-in-out;
-    border-radius: 8px; /* Optional: keeps the glow shaped to the card */
+    border-radius: 12px; /* Optional: keeps the glow shaped to the card */
 }
 
 /* 2. Define the hover state with a pink box-shadow */
