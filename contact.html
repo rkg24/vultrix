@@ -17,61 +17,42 @@
 <body class="bg-light">
 
 
-    <!-- Example: Brand/Logo + Navbar Text -->
-    <nav class=" navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #1B2631">
-        <div class="container-fluid">
-            <!-- Brand / Logo -->
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
-                <!-- Using an image: Bootstrap will size/align it nicely in the navbar -->
-                <img src="images/logo.png"
-                     alt="Logo"
-                     width="40"
-                     height=""
-                     class="rounded" />
-                <span></span>
-                Vultrix
-            </a>
-
-            <!-- Toggler (for small screens) -->
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <!-- Left links -->
-                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#solution">Solution</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#consulting">Consulting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#training">Training</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact Us</a>
-                    </li>
-                </ul>
-
-                <!-- Navbar text (non-link content aligned vertically) -->
-                <span class="navbar-text">
-                    <a href="login.html#login" class="btn btn-custom-gold btn-lg fs-5">Login</a>
-                </span>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top futuristic-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" width="40" class="rounded logo-glow" />
             </div>
+            <span class="brand-text">VULTRIX</span>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#solution">SOLUTION</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#consulting">CONSULTING</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#training">TRAINING</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACT</a></li>
+            </ul>
+
+           <!-- Navbar text (non-link content aligned vertically) -->
+                    <span class="navbar-text">
+                        <a href="login.html#login" class="btn btn-custom-gold btn-lg fs-5">Login</a>
+                    </span>
+                </div>
+                </a>
+            </span>
         </div>
+    </div>
+</nav>
+
+                   
+</div>
     </nav>
 
 
@@ -147,9 +128,16 @@
 
          
 </div>
+<button id="scrollTopBtn" title="Go to top">
+  <div class="glow-point"></div>
+  <span class="arrow">&#8593;</span>
+</button>
 
-                                                                                <button id="scrollTopBtn" title="Go to top">&#8593;</button>
-                                                                        <nav class=" navbar navbar-expand-sm navbar-dark" style="background-color: #0D2533">
+</div>
+<div>
+
+
+                                                                        <nav class=" navbar navbar-expand-sm navbar-dark futuristic-nav" style="background-color: #0D2533">
 
                                                                             <div class="container justify-content-center">
                                                                                 <span class="navbar-text">
@@ -160,6 +148,9 @@
                                                                                 </span>
 
                                                                                 </section>
+
+</nav>
+</div>
 
 
 
