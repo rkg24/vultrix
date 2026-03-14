@@ -225,3 +225,21 @@ textarea {
         margin-bottom: 20px;
     }
 }
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    
+    /* This targets the container holding the form */
+    #contactform .container {
+        /* Adjust '150px' to whatever height feels right for your design */
+        padding-top: 110px !important; 
+        
+        /* Optional: add some breathing room at the bottom too */
+        padding-bottom: 50px;
+    }
+
+    /* If you want space specifically between the top edge and the form box */
+    .form-container {
+        margin-top: 20px;
+    }
+}
